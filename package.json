@@ -1,0 +1,15 @@
+{
+  "name": "localhost4001",
+  "version": "1.0.0",
+  "description": "CORS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server/server.js"
+  },
+  "author": "Sanjeev Jha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
