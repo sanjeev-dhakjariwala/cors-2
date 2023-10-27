@@ -12,7 +12,8 @@ app.use(
 
 app.get("/cors", async (req, res) => {
   try {
-    const result = await fetch("http://localhost:4000/hello");
+    const url = 'https://cors-1-pkgg.onrender.com/hello'
+    const result = await fetch(url);
     res.status(200);
     res.send({
       success: true,
