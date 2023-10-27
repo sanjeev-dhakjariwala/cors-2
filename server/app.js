@@ -11,8 +11,8 @@ app.use(
 );
 
 app.get("/cors", async (req, res) => {
+  const url = 'https://cors-1-pkgg.onrender.com/hello'
   try {
-    const url = 'https://cors-1-pkgg.onrender.com/hello'
     const result = await fetch(url);
     res.status(200);
     res.send({
@@ -21,10 +21,10 @@ app.get("/cors", async (req, res) => {
     })
   } catch (error) {
     res.status(400);
-    console.log(`Unable to fetch!!!`);
+    console.log(`Unable to fetch!!! ${url}`);
     res.send({
       success: false,
-      message: "Unable to fetch due to CORS Policy!!!"
+      message: `Unable to fetch due to CORS Policy!!! ${url}`
     })
   }
 });
